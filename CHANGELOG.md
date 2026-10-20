@@ -1,5 +1,13 @@
 # Changelog - DesignAdobado
 
+## [Unreleased]
+
+### Documentado
+- Estado de compilación y validación manual de Windows actualizado.
+- Captura o tarjeta de marca identificada correctamente; se aclara que la prueba con archivos reales sigue pendiente.
+- Se confirma que todavía no existe una release pública.
+
+
 ## 0.1.0-alpha.1 - 2026-10-20
 
 ### Anadido
