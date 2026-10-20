@@ -7,11 +7,11 @@
 [![License](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-6cb6ff)](LICENSE-APACHE)
 [![Rust](https://img.shields.io/badge/Rust-1.95%2B-ff7a59)](Cargo.toml)
 [![Windows build](https://github.com/smouj/DesignAdobado/actions/workflows/windows-build.yml/badge.svg?branch=main)](https://github.com/smouj/DesignAdobado/actions/workflows/windows-build.yml)
-[![Prueba](https://img.shields.io/badge/prueba-manual%20pendiente-ff7a59)](#estado)
+[![Prueba](https://img.shields.io/badge/prueba-inicio%20comprobado-6cb6ff)](#estado)
 [![Estrellas](https://img.shields.io/github/stars/smouj/DesignAdobado?style=flat&color=B8F34A)](https://github.com/smouj/DesignAdobado/stargazers)
 [![Adobado Kit](https://img.shields.io/badge/Adobado%20Kit-hub-b8f34a)](https://github.com/smouj/Adobado_Kit)
 
-> **Pruebas en Windows (20/10/2026):** la compilación es correcta; todavía falta instalar e iniciar la app. El flujo con archivos reales también está pendiente (abrir, editar y exportar). La imagen muestra la marca, no una captura de su interfaz.
+> **Pruebas en Windows (21/10/2026):** la compilación, la instalación y el inicio están comprobados. Falta validar el flujo con un archivo real: abrir, editar y exportar. La imagen es una tarjeta de marca; no muestra la interfaz.
 >
 > Proyecto independiente. No afiliado a ArtCraft ni a Adobe.
 
@@ -22,9 +22,9 @@
 ## Estado
 
 - **Build de Windows:** correcto en GitHub Actions; consulta el [workflow actual](https://github.com/smouj/DesignAdobado/actions/workflows/windows-build.yml).
-- **Instalación e inicio:** pendientes de comprobación manual en Windows.
+- **Instalación e inicio:** comprobados en Windows el 21/10/2026.
 - **Prueba con un archivo:** falta completar el flujo de abrir, editar y exportar.
-- **Estado:** alpha; falta validar el inicio y una tarea completa con un archivo real.
+- **Estado:** alpha; falta validar una tarea completa con un archivo real.
 - **Descarga pública:** todavía no hay un paquete disponible.
 - **Commit de origen:** 443ea4640ca368fcf0241b04813bd3817acd5df8.
 
