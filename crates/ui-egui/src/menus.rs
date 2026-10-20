@@ -278,11 +278,11 @@ pub const UI_COMMANDS: &[(&str, &str, Option<&str>, &str)] = &[
         "{on?: bool, at?: [x, y] (points from the canvas's top-left)} — the Contextual Task Bar stays where it is (or at `at`) instead of following the selection; with neither, toggles",
     ),
     ("window.taskBarReset", "Reset Bar Position", None, "{} — the Contextual Task Bar follows the selection again, under it"),
-    ("help.discord", "Join the Adobado Kit Discord…", None, "{} — opens https://github.com/smouj/Adobado_Kit in the browser"),
-    ("help.appPage", "DesignAdobado Website…", None, "{} — opens https://github.com/smouj/DesignAdobado"),
+    ("help.discord", "Get help and report an issue…", None, "{} — opens the DesignAdobado issue tracker"),
+    ("help.appPage", "DesignAdobado Project Page…", None, "{} — opens https://github.com/smouj/DesignAdobado"),
     ("help.github", "DesignAdobado on GitHub…", None, "{} — opens https://github.com/smouj/DesignAdobado"),
     ("help.issues", "Report an Issue…", None, "{} — opens the GitHub issue tracker"),
-    ("help.website", "Adobado Kit Website…", None, "{} — opens https://github.com/smouj/Adobado_Kit"),
+    ("help.website", "Adobado Kit Website…", None, "{} — opens https://smouj.github.io/Adobado_Kit/"),
     ("help.app", "Adobado Kit App Page…", None, "{app} — opens https://github.com/smouj/Adobado_Kit/apps/{app} (e.g. photocraft)"),
     (
         "help.about",
@@ -2295,7 +2295,7 @@ pub enum AppMenuItem {
 /// The macOS application menu. Settings… is `app.preferences`, which `native_menu_tree` leaves out of Edit.
 pub const MAC_APP_MENU: &[AppMenuItem] = &[
     AppMenuItem::Cmd { id: "dc-about", label: "About DesignAdobado", command: "help.about" },
-    AppMenuItem::Cmd { id: "dc-discord", label: "Join the Adobado Kit Discord…", command: "help.discord" },
+    AppMenuItem::Cmd { id: "dc-discord", label: "Get help and report an issue…", command: "help.discord" },
     AppMenuItem::Sep,
     AppMenuItem::Cmd { id: "dc-settings", label: "Settings…", command: "app.preferences" },
     AppMenuItem::Sep,

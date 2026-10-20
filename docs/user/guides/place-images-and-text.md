@@ -2,7 +2,6 @@
 title: Place images, PDFs and text
 description: Bring images, PDF pages, Word and plain text files into a DesignAdobado document with File, Place.
 order: 30
-verified: 0.7.1
 ---
 
 Choose **File**, then **Place…** (Ctrl+D), pick a file, and DesignAdobado puts it into your document.
@@ -44,4 +43,4 @@ A PDF with one page is placed without this dialog.
 
 ## If a file cannot be placed
 
-DesignAdobado shows an alert when a file cannot be opened or placed. Ask in [Discord](https://github.com/smouj/Adobado_Kit) or see [Report a problem](../troubleshooting/get-help.md).
+DesignAdobado shows an alert when a file cannot be opened or placed. See [Report a problem](../troubleshooting/get-help.md) for the issue tracker and the details to include.

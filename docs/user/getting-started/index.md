@@ -2,7 +2,6 @@
 title: Getting started
 description: Install DesignAdobado, then open the sample magazine or start a new document.
 order: 10
-verified: 0.7.1
 ---
 
 Install DesignAdobado first, then start a document.

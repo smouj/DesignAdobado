@@ -1,12 +1,15 @@
 ---
 title: DesignAdobado
-description: DesignAdobado is a free, open-source page layout app for print and screen, an alternative to Adobe InDesign.
-verified: 0.7.1
+description: DesignAdobado is a page-layout project in pre-alpha; no tested installation package is available yet.
 ---
 
-DesignAdobado is a page layout and publishing app. It is an open-source alternative to Adobe InDesign, built from scratch by the Adobado Kit team. If you know InDesign's tools, menus and panels, you will find them here.
+> **Current status:** DesignAdobado has a successful source build, but installing, opening, and
+> completing a real file workflow are still pending. The guides below have not been checked against a
+> tested Adobado package.
 
-It has spreads and parent pages, text frames that thread from one to the next, paragraph and character styles, swatches and text wrap. It opens and saves InDesign Markup (IDML) files and exports PDF, PNG and EPUB. It is free, with no subscription, licence server or telemetry. The project is in pre-alpha, so expect gaps.
+The project is a page-layout and publishing app in pre-alpha. Its source includes spreads, parent
+pages, threaded text, styles, and PDF, PNG, and EPUB export; these capabilities are not yet verified
+in a published Adobado build.
 
 ## Start here
 
@@ -18,4 +21,4 @@ It has spreads and parent pages, text frames that thread from one to the next, p
 
 ## Get help
 
-Ask in [Discord](https://github.com/smouj/Adobado_Kit) or open an issue in the [issue tracker](https://github.com/smouj/DesignAdobado/issues). Say which version and which system you use.
+Open an issue in the [DesignAdobado tracker](https://github.com/smouj/DesignAdobado/issues). Say which version and operating system you use.

@@ -1443,7 +1443,10 @@ const TABLE: &[(&str, [&str; 5])] = &[
     ),
     ("for", ["for", "pour", "por", "に対して", "行"]),
     ("About DesignAdobado", ["About DesignAdobado", "À propos de DesignAdobado", "About DesignAdobado", "About DesignAdobado", "关于 DesignAdobado"]),
-    ("Quit DesignAdobado", ["DesignAdobado beenden", "Quitter DesignAdobado", "Salir de DesignAdobado", "DesignAdobado を終了", "退出 DesignAdobado"]),
+    (
+        "Quit DesignAdobado",
+        ["DesignAdobado beenden", "Quitter DesignAdobado", "Salir de DesignAdobado", "DesignAdobado を終了", "退出 DesignAdobado"],
+    ),
     ("Accept All Changes", ["Accept All Changes", "Accepter toutes les modifications", "Accept All Changes", "Accept All Changes", "接受所有更改"]),
     ("Activate Document", ["Activate Document", "Activer le document", "Activate Document", "Activate Document", "激活文档"]),
     ("Add Anchor Point", ["Add Anchor Point", "Ajouter un point d'ancrage", "Add Anchor Point", "Add Anchor Point", "添加锚点"]),
@@ -1507,7 +1510,10 @@ const TABLE: &[(&str, [&str; 5])] = &[
         "Adobado Kit App Page…",
         ["Adobado Kit App Page…", "Page de l'application Adobado Kit…", "Adobado Kit App Page…", "Adobado Kit App Page…", "Adobado Kit 应用页面…"],
     ),
-    ("Adobado Kit Website…", ["Adobado Kit Website…", "Site web d'Adobado Kit…", "Adobado Kit Website…", "Adobado Kit Website…", "Adobado Kit 网站…"]),
+    (
+        "Adobado Kit Website…",
+        ["Adobado Kit Website…", "Site web d'Adobado Kit…", "Adobado Kit Website…", "Adobado Kit Website…", "Adobado Kit 网站…"],
+    ),
     ("Attributes", ["Attributes", "Attributs", "Attributes", "Attributes", "属性"]),
     ("Bevel and Emboss", ["Bevel and Emboss", "Biseautage et estampage", "Bevel and Emboss", "Bevel and Emboss", "斜面和浮雕"]),
     ("Buttons", ["Buttons", "Boutons", "Buttons", "Buttons", "按钮"]),
@@ -1660,7 +1666,13 @@ const TABLE: &[(&str, [&str; 5])] = &[
     ),
     (
         "DesignAdobado on GitHub…",
-        ["DesignAdobado on GitHub…", "DesignAdobado sur GitHub…", "DesignAdobado on GitHub…", "DesignAdobado on GitHub…", "DesignAdobado 在 GitHub 上…"],
+        [
+            "DesignAdobado on GitHub…",
+            "DesignAdobado sur GitHub…",
+            "DesignAdobado on GitHub…",
+            "DesignAdobado on GitHub…",
+            "DesignAdobado 在 GitHub 上…",
+        ],
     ),
     (
         "Detach All Objects from Parent",
@@ -2509,7 +2521,10 @@ const TABLE: &[(&str, [&str; 5])] = &[
     ("Keyboard Increments", ["Keyboard Increments", "Incréments au clavier", "Keyboard Increments", "Keyboard Increments", "键盘增量"]),
     ("Liquid guides", ["Liquid guides", "Repères liquides", "Liquid guides", "Liquid guides", "自适应参考线"]),
     ("Markers", ["Markers", "Marqueurs", "Markers", "Markers", "标记"]),
-    ("More Adobado Kit apps", ["More Adobado Kit apps", "Autres applications Adobado Kit", "More Adobado Kit apps", "More Adobado Kit apps", "更多 Adobado Kit 应用"]),
+    (
+        "More Adobado Kit apps",
+        ["More Adobado Kit apps", "Autres applications Adobado Kit", "More Adobado Kit apps", "More Adobado Kit apps", "更多 Adobado Kit 应用"],
+    ),
     ("Nested Line Styles", ["Nested Line Styles", "Styles de ligne imbriqués", "Nested Line Styles", "Nested Line Styles", "嵌套行样式"]),
     ("Nested Styles", ["Nested Styles", "Styles imbriqués", "Nested Styles", "Nested Styles", "嵌套样式"]),
     (
@@ -2808,7 +2823,13 @@ const TABLE: &[(&str, [&str; 5])] = &[
     ("Variable Font", ["Variable Font", "Police variable", "Variable Font", "Variable Font", "可变字体"]),
     (
         "Welcome to DesignAdobado",
-        ["Welcome to DesignAdobado", "Bienvenue dans DesignAdobado", "Welcome to DesignAdobado", "Welcome to DesignAdobado", "欢迎使用 DesignAdobado"],
+        [
+            "Welcome to DesignAdobado",
+            "Bienvenue dans DesignAdobado",
+            "Welcome to DesignAdobado",
+            "Welcome to DesignAdobado",
+            "欢迎使用 DesignAdobado",
+        ],
     ),
     ("When Scaling", ["When Scaling", "Lors du redimensionnement", "When Scaling", "When Scaling", "缩放时"]),
     ("[Basic] (working) ▾", ["[Basic] (working) ▾", "[De base] (de travail) ▾", "[Basic] (working) ▾", "[Basic] (working) ▾", "[基本] (工作区) ▾"]),

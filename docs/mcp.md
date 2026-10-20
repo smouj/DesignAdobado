@@ -256,4 +256,4 @@ key        {"key": "Escape"}
 
 ## Community links
 
-`app.links` returns the Adobado Kit Discord (https://github.com/smouj/Adobado_Kit), the website (https://github.com/smouj/Adobado_Kit), DesignAdobado's app page (https://github.com/smouj/DesignAdobado), its GitHub repository (https://github.com/smouj/DesignAdobado) and the issue tracker. In the running app, the UI commands `help.discord`, `help.appPage`, `help.github`, `help.issues`, `help.website`, `help.app {app}` open them in the browser and `help.about {tab?}` shows the About window (tabs `about`, `contributors`, `models`). The server's `serverInfo.websiteUrl` is the app page.
+`app.links` returns the support issue tracker, the Adobado Kit website, DesignAdobado's project page and repository, and the issue tracker. In the running app, `help.discord` is a legacy support command; `help.appPage`, `help.github`, `help.issues`, `help.website`, and `help.app {app}` open project links in the browser. `help.about {tab?}` shows the About window (tabs `about`, `contributors`, `models`). The server's `serverInfo.websiteUrl` is the project page.

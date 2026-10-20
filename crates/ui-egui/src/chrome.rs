@@ -326,9 +326,9 @@ pub fn app_bar(app: &mut DesignApp, ui: &mut egui::Ui) {
                                 app.status(crate::i18n::tr(&app.ui.language, "Export a PDF, IDML or package to share — no cloud account needed."));
                             }
                             ui.add_space(8.0);
-                            // Always one click away: the Adobado Kit community Discord.
-                            if crate::about::discord_button(ui, "Discord", vec2(78.0, 22.0)) {
-                                let _ = app.run("help.discord", json!({}));
+                            // Keep the kit's tools and current downloads one click away.
+                            if crate::about::kit_button(ui, "Adobado Kit", vec2(104.0, 22.0)) {
+                                let _ = app.run("help.website", json!({}));
                             }
                             tools_start = ui.min_rect().min.x;
                             ui.data_mut(|d| d.insert_temp(egui::Id::new("app_bar_tools_start"), tools_start));
@@ -1048,7 +1048,7 @@ fn recent_preview_texture(ctx: &egui::Context, path: &str, modified: Option<std:
     tex
 }
 
-/// Start screen: the Adobado Kit community (Discord first) and project links.
+/// Start screen: the Adobado Kit website and useful project links.
 fn community_card(app: &mut DesignApp, ui: &mut egui::Ui) {
     let t = Tokens::get(ui.ctx());
     egui::Frame::NONE.fill(t.panel).corner_radius(10.0).inner_margin(egui::Margin::same(14)).show(ui, |ui| {
@@ -1058,7 +1058,7 @@ fn community_card(app: &mut DesignApp, ui: &mut egui::Ui) {
         ui.set_max_width(760.0);
         ui.horizontal(|ui| {
             let (r, _) = ui.allocate_exact_size(vec2(44.0, 44.0), Sense::hover());
-            crate::about::paint_mark(ui, r, crate::about::BRAND);
+            crate::about::paint_app_icon(ui, r);
             ui.add_space(8.0);
             let text_width = (ui.available_width() - BUTTON.x - 16.0).max(120.0);
             ui.vertical(|ui| {
@@ -1066,7 +1066,9 @@ fn community_card(app: &mut DesignApp, ui: &mut egui::Ui) {
                 ui.style_mut().wrap_mode = Some(egui::TextWrapMode::Wrap);
                 ui.label(crate::rtl::widget(
                     ui,
-                    egui::RichText::new(crate::i18n::tr(&app.ui.language, "Join the Adobado Kit community")).font(semibold(14.0)).color(t.text_strong),
+                    egui::RichText::new(crate::i18n::tr(&app.ui.language, "Join the Adobado Kit community"))
+                        .font(semibold(14.0))
+                        .color(t.text_strong),
                 ));
                 ui.label(crate::rtl::widget(
                     ui,
@@ -1076,7 +1078,7 @@ fn community_card(app: &mut DesignApp, ui: &mut egui::Ui) {
                 ));
                 ui.add_space(4.0);
                 ui.horizontal(|ui| {
-                    for (text, id) in [("DesignAdobado page", "help.appPage"), ("GitHub", "help.github"), ("getartcraft.com", "help.website")] {
+                    for (text, id) in [("Project repository", "help.github"), ("Adobado Kit website", "help.website")] {
                         let url = designcraft_engine::links::get(&id[5..]).unwrap_or_default();
                         let l = ui
                             .add(egui::Label::new(egui::RichText::new(text).size(12.0).color(t.accent).underline()).sense(Sense::click()))
@@ -1090,8 +1092,8 @@ fn community_card(app: &mut DesignApp, ui: &mut egui::Ui) {
                 });
             });
             ui.with_layout(egui::Layout::right_to_left(egui::Align::Center), |ui| {
-                if crate::about::discord_button(ui, crate::i18n::tr(&app.ui.language, "Join our Discord"), BUTTON) {
-                    let _ = app.run("help.discord", json!({}));
+                if crate::about::kit_button(ui, crate::i18n::tr(&app.ui.language, "Explore the Adobado Kit"), BUTTON) {
+                    let _ = app.run("help.website", json!({}));
                 }
             });
         });

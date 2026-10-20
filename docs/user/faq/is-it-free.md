@@ -2,7 +2,6 @@
 title: Is DesignAdobado free?
 description: DesignAdobado is free and open source, with no subscription, licence server or telemetry.
 order: 10
-verified: 0.7.1
 ---
 
 Yes. DesignAdobado is free. It has no subscription, no licence server and no telemetry.
