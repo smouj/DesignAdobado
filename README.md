@@ -7,11 +7,14 @@
 [![License](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-6cb6ff)](LICENSE-APACHE)
 [![Rust](https://img.shields.io/badge/Rust-1.95%2B-ff7a59)](Cargo.toml)
 [![Status](https://img.shields.io/badge/status-early%20alpha-d69e2e)](#estado)
+[![Stars](https://img.shields.io/github/stars/smouj/DesignAdobado?style=flat&color=FF5C5C)](https://github.com/smouj/DesignAdobado/stargazers)
 [![Adobado Kit](https://img.shields.io/badge/Adobado%20Kit-hub-b8f34a)](https://github.com/smouj/Adobado_Kit)
 
 > **Alpha temprana.** Codigo importado y rebrandeado desde DesignCraft. Build de Windows y prueba de edicion pendientes. No se presenta como app disponible ni como sustituto profesional.
 >
 > Proyecto independiente. No afiliado a ArtCraft ni a Adobe.
+
+![DesignAdobado](docs/preview.png)
 
 ## Estado
 
