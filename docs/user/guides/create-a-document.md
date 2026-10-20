@@ -2,7 +2,6 @@
 title: Create a new document
 description: Start a new DesignAdobado document from a preset or with your own page size, margins and columns.
 order: 10
-verified: 0.7.1
 ---
 
 Choose **File**, then **New Document…** (Ctrl+N), set the page size and margins, and click **OK**.

@@ -1,13 +1,11 @@
 # User docs: rules for agents and contributors
 
-Everything in this folder (except this file, CLAUDE.md and README.md) is published at
-https://github.com/smouj/Adobado_Kit/docs/designcraft. The file path is the URL:
-`troubleshooting/app-closes-at-start.md` → `/docs/designcraft/troubleshooting/app-closes-at-start`.
-Renaming a file breaks links, so add the old path to `redirect_from` when you rename.
+These guides are maintained in this repository. Do not describe them as published on the Kit site
+until that site contains these pages. Keep file names stable when they are linked from other guides.
 
 ## Who reads this
 
-Artists and designers using DesignAdobado, Discord mods answering them, and AI assistants looking things up for
+Artists and designers using DesignAdobado, community contributors helping them, and AI assistants looking things up for
 either. Write for an artist, not a developer.
 
 ## Page rules
@@ -16,13 +14,13 @@ either. Write for an artist, not a developer.
 - Plain words, short sentences, numbered steps for anything the reader does.
 - Start the body at `##`. The page title comes from frontmatter.
 - Link to other pages instead of repeating them. Use relative links to the `.md` file:
-  `[Install DesignAdobado](../getting-started/install.md)`.
+  `[Install DesignAdobado](getting-started/install.md)`.
 - No marketing copy, no "simply", no claims you have not checked in the code or a release.
-- Call the product "DesignAdobado", as the app, its downloads and getartcraft.com do.
+- Call the product "DesignAdobado" and link only to current Adobado Kit or GitHub pages.
 - Name UI labels exactly as the app shows them, in **bold**.
 - Document Windows 11 only. Do not name older Windows versions.
 - Troubleshooting pages: `## Symptoms`, `## Fix`, `## Why this happens` (optional),
-  `## Still stuck?` (link the issue tracker or Discord).
+  `## Still stuck?` (link the issue tracker).
 
 ## Frontmatter
 
@@ -36,7 +34,7 @@ either. Write for an artist, not a developer.
 
 Only `key: value` and `key: [a, b]` lines work. Quote values that start with a quote or contain ` #`.
 
-Set `verified` to the latest release (the newest release tag) after checking the page against that tag with `git show <tag>:<path>`. Pages describe the latest release users download, not unreleased code on main.
+Set `verified` only to a DesignAdobado release that has been checked manually. Do not use a DesignCraft version or an upstream release as a verified DesignAdobado version. Omit `verified` when no tested DesignAdobado package is available.
 
 ## Folders
 

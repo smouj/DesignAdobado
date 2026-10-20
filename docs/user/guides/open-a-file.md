@@ -2,7 +2,6 @@
 title: Open a DesignAdobado or InDesign (IDML) file
 description: Open a .designcraft document or an InDesign Markup (.idml) file, and what to do about missing fonts and incomplete IDML packages.
 order: 20
-verified: 0.7.1
 ---
 
 Choose **File**, then **Open…** (Ctrl+O), and pick a `.designcraft` or `.idml` file. The file opens as a new document.

@@ -1,46 +1,19 @@
 ---
 title: Install DesignAdobado
-description: Download DesignAdobado 0.7.1 for Windows 11, macOS or Linux, or install it from Adobado Kit Launcher.
+description: Check current DesignAdobado build status and obtain a tested package when one is published.
 order: 20
-verified: 0.7.1
 ---
 
-Download the file for your system from the [latest release](https://github.com/smouj/DesignAdobado/releases/latest) and install it. In the file names, `<version>` stands for the version number, for example `0.7.1`. The release also has `SHA256SUMS.txt`, which lists a checksum for every file. The [DesignAdobado page on getartcraft.com](https://github.com/smouj/DesignAdobado) links to the download as well.
+## Current release status
 
-## Windows 11
+The DesignAdobado repository is still validating its first updated app package. The source build is not yet a tested installer, so use the repository's Actions and release notes to confirm the current platform status before installing a binary.
 
-1. Open the [latest release](https://github.com/smouj/DesignAdobado/releases/latest).
-2. Download `designcraft-<version>-windows-x64.msi`. It fits most PCs (64-bit Intel and AMD).
-3. Run the file and follow the installer.
-4. Start **DesignAdobado** from the Start menu.
+Check [DesignAdobado releases](https://github.com/smouj/DesignAdobado/releases) and use a package only when its release notes identify it as a tested DesignAdobado build with the current app icon. Earlier upstream packages do not include this branding update.
 
-The release also has an `arm64` installer for ARM PCs such as Snapdragon, and a 32-bit `x86` installer. To run without installing, download `designcraft-<version>-windows-x64-portable.zip` (or the `arm64` or `x86` version), unzip it and start the program inside. The installers and executables are code-signed.
+## Build from source
 
-## macOS
+The [DesignAdobado repository](https://github.com/smouj/DesignAdobado) contains the source and build instructions. The internal executable name remains `designcraft` for workspace compatibility; the visible product name is DesignAdobado.
 
-1. Download `designcraft-<version>-macos-universal.dmg`. It works on Apple silicon and Intel Macs.
-2. Open it and drag DesignAdobado to Applications.
+## Get help
 
-The app is signed and notarized.
-
-## Linux
-
-Pick one file from the release. Replace `x86_64` with `aarch64` on ARM.
-
-| File                                          | Notes                                                    |
-|-----------------------------------------------|----------------------------------------------------------|
-| `designcraft-<version>-linux-x86_64.AppImage` | Runs anywhere.                                           |
-| `designcraft-<version>-linux-x86_64.flatpak`  | Sandboxed. Install with `flatpak install --user <file>`. |
-| `designcraft-<version>-linux-x86_64.deb`      | Debian and Ubuntu.                                       |
-| `designcraft-<version>-linux-x86_64.rpm`      | Fedora, RHEL and openSUSE.                               |
-| `designcraft-<version>-linux-x86_64.tar.gz`   | Unpack anywhere.                                         |
-
-For RISC-V there is a `.deb`, an `.rpm` and a tarball, named with `riscv64` in place of `x86_64`. There is no AppImage or Flatpak for RISC-V. The RISC-V build needs glibc 2.39 or newer (Ubuntu 24.04 or newer). A FreeBSD build (`designcraft-<version>-freebsd-x86_64.tar.gz`) is on the release page too.
-
-## Install with Adobado Kit Launcher
-
-Adobado Kit Launcher lists DesignAdobado and can install and update it for you. See [Adobado Kit Launcher](https://github.com/smouj/Adobado_Kit/docs/craft-launcher) for how it works.
-
-## First run
-
-Open DesignAdobado. You land on the start screen. Continue with [Getting started](index.md). If the window closes right away, see [DesignAdobado closes right after it starts](../troubleshooting/app-closes-at-start.md).
+For installation problems, open an [issue in the DesignAdobado tracker](https://github.com/smouj/DesignAdobado/issues) with your operating system, the release or commit you used, and the exact error message. Do not attach private documents.

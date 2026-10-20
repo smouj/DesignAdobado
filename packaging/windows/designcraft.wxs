@@ -26,9 +26,9 @@
 
     <Icon Id="DesigncraftIcon.ico" SourceFile="$(var.IconPath)" />
     <Property Id="ARPPRODUCTICON" Value="DesigncraftIcon.ico" />
-    <Property Id="ARPURLINFOABOUT" Value="https://getartcraft.com/apps/designcraft" />
-    <Property Id="ARPURLUPDATEINFO" Value="https://getartcraft.com/apps/designcraft" />
-    <Property Id="ARPHELPLINK" Value="https://discord.gg/artcraft" />
+    <Property Id="ARPURLINFOABOUT" Value="https://github.com/smouj/DesignAdobado" />
+    <Property Id="ARPURLUPDATEINFO" Value="https://github.com/smouj/DesignAdobado/releases" />
+    <Property Id="ARPHELPLINK" Value="https://github.com/smouj/DesignAdobado/issues" />
 
     <!-- Shared native setup UI, including install/uninstall completion. -->
 

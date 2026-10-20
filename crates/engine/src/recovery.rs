@@ -339,8 +339,9 @@ fn access(dir: &Path, created: bool) -> Result<Access> {
 #[cfg(not(target_arch = "wasm32"))]
 fn check_unheld(dir: &Path) -> Result<()> {
     let path = dir.join(LOCK);
-    let in_use =
-        || EngineError::Other(format!("{}: another running DesignAdobado keeps its recovery data here; choose another recovery folder", dir.display()));
+    let in_use = || {
+        EngineError::Other(format!("{}: another running DesignAdobado keeps its recovery data here; choose another recovery folder", dir.display()))
+    };
     match std::fs::symlink_metadata(&path) {
         Ok(metadata) if is_link_like(&metadata) || !metadata.file_type().is_file() => return Err(in_use()),
         Ok(_) => {}

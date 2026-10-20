@@ -1,11 +1,15 @@
 ---
 title: DesignAdobado closes right after it starts
-description: On Windows, DesignAdobado shows a brief spinner and then closes with no message. Update, or force the DirectX 12 graphics backend.
+description: Steps for investigating a Windows startup close in a local DesignAdobado build; current release behavior is still being validated.
 order: 10
-verified: 0.7.1
 ---
 
-If DesignAdobado flashes a spinner and closes, update to the [latest release](https://github.com/smouj/DesignAdobado/releases/latest). If it still closes, set the environment variable `WGPU_BACKEND` to `dx12` and start it again.
+> **Current status:** There is no tested DesignAdobado package yet. The driver notes below are
+> inherited from the source project and have not been verified in a published Adobado build.
+
+If a local DesignAdobado build flashes a spinner and closes, note your Windows version and graphics
+card and report it in the [DesignAdobado issue tracker](https://github.com/smouj/DesignAdobado/issues).
+The DirectX 12 option below is a diagnostic for local builds, not a confirmed release fix.
 
 ## Symptoms
 
@@ -15,8 +19,8 @@ If DesignAdobado flashes a spinner and closes, update to the [latest release](ht
 
 ## Fix
 
-1. Install the [latest release](https://github.com/smouj/DesignAdobado/releases/latest). DesignAdobado remembers a start that never showed a window and tries the next graphics backend on the following start. On Windows the order is DirectX 12, Vulkan, then OpenGL, and the status bar says when it switches. A reporter who could not start 0.5.0 on Windows 11 Enterprise wrote that 0.6.0 launched without trouble ([issue #273](https://github.com/smouj/DesignAdobado/issues/273)).
-2. If it still closes, set an environment variable named `WGPU_BACKEND` with the value `dx12`. Start DesignAdobado from a shell where it is set, or add it in Windows settings for your account. People who hit this crash with an AMD graphics driver reported that DesignAdobado starts with `WGPU_BACKEND=dx12`. `dx12` also avoids Intel's Vulkan driver (`igvk64.dll`), which crashed in [issue #192](https://github.com/smouj/DesignAdobado/issues/192).
+1. If you built the app locally, start it again once and note whether the behavior changes.
+2. If it still closes, you can test a local Windows build with the environment variable `WGPU_BACKEND` set to `dx12`. Start the app from a shell where it is set. Report whether this changes the result in the [issue tracker](https://github.com/smouj/DesignAdobado/issues).
 3. Start DesignAdobado again.
 
 Setting `WGPU_BACKEND` also turns off the automatic fallback. Other accepted values are `vulkan` and `gl`, and a comma-separated list lets the graphics library choose among them. Do not pick `vulkan` on Intel graphics or `gl` on AMD graphics: those are the drivers in the crash reports.
@@ -31,4 +35,4 @@ DesignAdobado keeps its record of failed backends in a file called `gpu.json` in
 
 ## Still stuck?
 
-Send the log. See [Report a problem](get-help.md) for where it is. Or ask in [Discord](https://github.com/smouj/Adobado_Kit).
+Send the log. See [Report a problem](get-help.md) for where it is and how to include it in an issue.

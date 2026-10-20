@@ -48,4 +48,4 @@ El nombre interno del crate se conserva para no romper el workspace; el nombre d
 
 Este repo forma parte de Adobado Kit: https://github.com/smouj/Adobado_Kit
 
-Hecho por SMOUJ013.
+Hecho por @smouj.

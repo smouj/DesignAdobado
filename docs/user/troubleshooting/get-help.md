@@ -2,10 +2,9 @@
 title: Report a problem
 description: What to include and where to post when DesignAdobado misbehaves or crashes.
 order: 20
-verified: 0.7.1
 ---
 
-Post in the [issue tracker](https://github.com/smouj/DesignAdobado/issues) or in [Discord](https://github.com/smouj/Adobado_Kit), and attach the log file. The log is the most useful thing you can send after a crash.
+Open an [issue in the DesignAdobado tracker](https://github.com/smouj/DesignAdobado/issues) and attach the log file. The log is the most useful thing you can send after a crash.
 
 ## What to include
 
