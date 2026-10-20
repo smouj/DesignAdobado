@@ -1,5 +1,7 @@
 # DesignAdobado
 
+<p align="center"><img src="assets/adobado/icon.png" width="104" alt="DesignAdobado"></p>
+
 **Diseno y composicion local.** Derivado de DesignCraft, rebrandeado para Adobado Kit.
 
 [![License](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-6cb6ff)](LICENSE-APACHE)
